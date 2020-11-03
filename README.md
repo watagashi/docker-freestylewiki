@@ -1,5 +1,7 @@
 # FreeStyleWiki on Docker
 
+![Docker Image CI](https://github.com/watagashi/docker-freestylewiki/workflows/Docker%20Image%20CI/badge.svg)
+
 ## About FreeStyleWiki
 
 -   [FrontPage - FreeStyleWiki](http://fswiki.osdn.jp/cgi-bin/wiki.cgi)
