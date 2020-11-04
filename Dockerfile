@@ -13,8 +13,9 @@ RUN apt-get update; \
 	mv wiki${FSWIKI_VERSION} cgi-bin/wiki; \
 	mkdir htdocs/wiki; \
 	mv cgi-bin/wiki/theme htdocs/wiki/theme; \
-	sed -i -e "s/\(theme_uri\s\+=\s\+\)\.\/theme\b/\1\/wiki\/theme/" \
-		-e "s/\(theme_dir\s\+=\s\+\)\.\/theme\b/\1..\/..\/\/htdocs\/wiki\/theme/" \
+	sed -i \
+		-e "s/\(theme_uri\s\+=\s\+\)\.\/theme\b/\1\/wiki\/theme/" \
+		-e "s/\(theme_dir\s\+=\s\+\)\.\/theme\b/\1..\/..\/htdocs\/wiki\/theme/" \
 		cgi-bin/wiki/setup.dat; \
 	cgi-bin/wiki/setup.sh cgi-bin/wiki; \
 	\
