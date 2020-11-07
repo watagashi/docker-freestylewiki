@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./wiki/attach:/usr/local/apache2/cgi-bin/wiki/attach
+      - ./wiki/backup:/usr/local/apache2/cgi-bin/wiki/backup
+      - ./wiki/config:/usr/local/apache2/cgi-bin/wiki/config
+      - ./wiki/data:/usr/local/apache2/cgi-bin/wiki/data
+      - ./wiki/log:/usr/local/apache2/cgi-bin/wiki/log
+      - ./wiki/pdf:/usr/local/apache2/cgi-bin/wiki/pdf
+      - ./wiki/plugin:/usr/local/apache2/cgi-bin/wiki/plugin
+      - ./wiki/tmpl:/usr/local/apache2/cgi-bin/wiki/tmpl
+      - ./wiki/theme:/usr/local/apache2/htdocs/wiki/theme
