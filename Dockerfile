@@ -30,3 +30,4 @@ RUN apt-get update; \
 	rm -rf \
 		/var/lib/apt/lists/* \
 		cgi-bin/wiki${FSWIKI_VERSION}.zip
+COPY --chown=www-data:www-data htdocs/index.html htdocs/
