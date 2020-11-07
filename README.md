@@ -8,7 +8,7 @@
 
 ## Usage
 
-### Build image and prepare volume with initial data
+### Prepare volume with initial data
 
 ```bash
 git clone https://github.com/watagashi/docker-freestylewiki.git
@@ -17,7 +17,7 @@ unzip wiki3_6_5.zip # https://osdn.net/projects/fswiki/releases/
 mv wiki3_6_5 wiki
 ```
 
-### Run container
+### Start container
 
 ```bash
 docker-compose up -d
